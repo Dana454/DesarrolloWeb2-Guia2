@@ -16,9 +16,10 @@ export const App = () => {
             <h2 className="text-center">Nuestra Colección</h2>
 
             <div className="row mt-5"> 
-                <Guitar nombre="Guitarra 1"/>
-                <Guitar nombre="Guitarra 2"/>
-                <Guitar nombre="Guitarra 3"/>
+                {data.map((guitar) =>(
+                    <Guitar guitar={guitar}/>
+                ) )}
+                
             </div>
         </main>
         <Footer/>
